@@ -7,6 +7,8 @@
 !/index.html
 !/images/
 !/.gitignore
+!/sitemap.xml
+!/robots.txt
 
 # macOS / エディタの生成物（全階層）
 .DS_Store

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://atmrwneed-pro.atm-rw-need.workers.dev/sitemap.xml
