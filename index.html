@@ -21,6 +21,7 @@
 
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%231e2e1e'/><text x='50' y='72' font-size='55' text-anchor='middle' fill='%23f5f0e8' font-family='serif'>V</text></svg>">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
   <!-- 構造化データ（LocalBusiness） -->
   <script type="application/ld+json">
@@ -53,6 +54,64 @@
     "priceRange": "¥3,000〜¥51,000",
     "sameAs": [
       "https://www.instagram.com/atm_salon.virir_"
+    ]
+  }
+  </script>
+
+  <!-- 構造化データ（FAQPage） -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "脱毛は痛くありませんか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "痛みの感じ方には個人差がありますが、お肌への負担を抑えた施術を心がけています。出力はお肌の状態に合わせて都度調整しますので、痛みがご不安な方もカウンセリングでお気軽にご相談ください。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "何回くらいで効果を実感できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "毛質・毛量や部位によって個人差がありますが、数回の施術で変化を実感される方が多いです。カウンセリングでお客様に合ったペースとプランをご提案いたします。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "男性でも利用できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "はい、性別を問わずご利用いただけます。完全個室のプライベートサロンですので、人目を気にせずリラックスしてお過ごしいただけます。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "予約はどこからできますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "InstagramのDMまたは公式LINEにて承っております。ご希望のメニューと日時をお送りください。空き状況をご案内いたします。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "支払い方法は何が使えますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "各種クレジットカード、QRコード決済（PayPay除く）に対応しています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "駐車場はありますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "無料駐車場を4台分（表2台・裏2台）ご用意しています。お車でも安心してお越しください。"
+        }
+      }
     ]
   }
   </script>
@@ -1356,6 +1415,123 @@
       }
     }
 
+    /* ─── FLOW ─── */
+    .flow-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      margin-top: 56px;
+    }
+
+    .flow-step {
+      position: relative;
+    }
+
+    .flow-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 40px;
+      font-weight: 300;
+      color: var(--green-light);
+      display: block;
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+
+    .flow-step h4 {
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--green-dark);
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+    }
+
+    .flow-step h4 span {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--text-light);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .flow-step p {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--text-light);
+      line-height: 1.9;
+    }
+
+    @media (max-width: 768px) {
+      .flow-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    /* ─── FAQ ─── */
+    .faq-list {
+      max-width: 780px;
+      margin: 48px auto 0;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid rgba(30, 46, 30, 0.12);
+    }
+
+    .faq-item summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px 8px;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--green-dark);
+      letter-spacing: 0.05em;
+      list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      content: '+';
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 300;
+      color: var(--green-light);
+      flex-shrink: 0;
+      transition: transform 0.25s ease;
+    }
+
+    .faq-item[open] summary::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-q-mark {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      color: var(--green-light);
+      margin-right: 14px;
+      flex-shrink: 0;
+    }
+
+    .faq-item summary .faq-q-text {
+      flex: 1;
+    }
+
+    .faq-a {
+      padding: 0 8px 26px 8px;
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--text-light);
+      line-height: 2;
+    }
+
     /* ─── SCROLL FADE ─── */
     .fade-in {
       opacity: 0;
@@ -1854,6 +2030,38 @@
     </div>
   </section>
 
+  <!-- FLOW -->
+  <section id="flow">
+    <div class="section-inner">
+      <span class="section-label fade-in">Flow</span>
+      <h2 class="section-title fade-in">ご来店の流れ</h2>
+      <div class="line-accent fade-in"></div>
+      <p class="section-lead fade-in">初めての方も安心してご来店いただけるよう、ご予約から施術後までの流れをご紹介します。</p>
+      <div class="flow-grid">
+        <div class="flow-step fade-in">
+          <span class="flow-num">01</span>
+          <h4>ご予約<span>Reservation</span></h4>
+          <p>InstagramのDMまたは公式LINEから、ご希望のメニューと日時をお知らせください。</p>
+        </div>
+        <div class="flow-step fade-in">
+          <span class="flow-num">02</span>
+          <h4>カウンセリング<span>Counseling</span></h4>
+          <p>お肌の状態やお悩み、ご希望を丁寧にヒアリングし、お一人おひとりに合ったプランをご提案します。</p>
+        </div>
+        <div class="flow-step fade-in">
+          <span class="flow-num">03</span>
+          <h4>施術<span>Treatment</span></h4>
+          <p>完全個室のリラックスできる空間で、お肌への負担に配慮しながら丁寧に施術いたします。</p>
+        </div>
+        <div class="flow-step fade-in">
+          <span class="flow-num">04</span>
+          <h4>アフターケア<span>After Care</span></h4>
+          <p>施術後のお肌の状態を確認し、ご自宅でのケア方法までしっかりサポートします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ACCESS -->
   <section id="access">
     <div class="section-inner">
@@ -1903,6 +2111,41 @@
   </section>
 
   <!-- RESERVE -->
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="section-inner">
+      <span class="section-label fade-in">FAQ</span>
+      <h2 class="section-title fade-in">よくある質問</h2>
+      <div class="line-accent fade-in"></div>
+      <div class="faq-list fade-in">
+        <details class="faq-item">
+          <summary><span class="faq-q-mark">Q.</span><span class="faq-q-text">脱毛は痛くありませんか？</span></summary>
+          <p class="faq-a">痛みの感じ方には個人差がありますが、お肌への負担を抑えた施術を心がけています。出力はお肌の状態に合わせて都度調整しますので、痛みがご不安な方もカウンセリングでお気軽にご相談ください。</p>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-mark">Q.</span><span class="faq-q-text">何回くらいで効果を実感できますか？</span></summary>
+          <p class="faq-a">毛質・毛量や部位によって個人差がありますが、数回の施術で変化を実感される方が多いです。カウンセリングでお客様に合ったペースとプランをご提案いたします。</p>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-mark">Q.</span><span class="faq-q-text">男性でも利用できますか？</span></summary>
+          <p class="faq-a">はい、性別を問わずご利用いただけます。完全個室のプライベートサロンですので、人目を気にせずリラックスしてお過ごしいただけます。</p>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-mark">Q.</span><span class="faq-q-text">予約はどこからできますか？</span></summary>
+          <p class="faq-a">InstagramのDMまたは公式LINEにて承っております。ご希望のメニューと日時をお送りください。空き状況をご案内いたします。</p>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-mark">Q.</span><span class="faq-q-text">支払い方法は何が使えますか？</span></summary>
+          <p class="faq-a">各種クレジットカード、QRコード決済（PayPay除く）に対応しています。</p>
+        </details>
+        <details class="faq-item">
+          <summary><span class="faq-q-mark">Q.</span><span class="faq-q-text">駐車場はありますか？</span></summary>
+          <p class="faq-a">無料駐車場を4台分（表2台・裏2台）ご用意しています。お車でも安心してお越しください。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
   <section id="reserve">
     <div class="section-inner">
       <span class="section-label fade-in">Reservation</span>
