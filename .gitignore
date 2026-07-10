@@ -10,6 +10,7 @@
 !/sitemap.xml
 !/robots.txt
 !/apple-touch-icon.png
+!/sugimoto/
 
 # macOS / エディタの生成物（全階層）
 .DS_Store
