@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>バリアと美白の設計図</title>
+<meta name="description" content="乾燥肌・ときどき敏感肌の30代向け。美白有効成分マップと、価格帯別のスキンケアアイテム一覧。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="バリアと美白の設計図">
+<meta property="og:description" content="乾燥肌・ときどき敏感肌の30代向け。美白有効成分マップと、価格帯別のスキンケアアイテム一覧。">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E&#129508;%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+:root{
+  --ground:#F6F5F9;
+  --surface:#FFFFFF;
+  --surface-2:#EFEDF5;
+  --line:#DEDBE9;
+  --line-soft:#EAE7F2;
+  --ink:#191722;
+  --ink-2:#4B4759;
+  --ink-3:#7A7589;
+  --accent:#5B4CC0;
+  --accent-soft:#ECE8FA;
+  --gentle:#256E60;
+  --gentle-soft:#DFF0EB;
+  --mid:#9A6414;
+  --mid-soft:#F6EBD8;
+  --strong:#A8434E;
+  --strong-soft:#F8E5E7;
+  --shadow:0 1px 2px rgba(25,23,34,.05), 0 8px 24px -16px rgba(25,23,34,.25);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#121118;
+    --surface:#1B1A23;
+    --surface-2:#23212D;
+    --line:#34313F;
+    --line-soft:#2A2833;
+    --ink:#EEECF4;
+    --ink-2:#B6B1C6;
+    --ink-3:#847F96;
+    --accent:#A99BF5;
+    --accent-soft:#282343;
+    --gentle:#71C8B4;
+    --gentle-soft:#15322D;
+    --mid:#DFAE63;
+    --mid-soft:#372B18;
+    --strong:#E58F98;
+    --strong-soft:#3A2126;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#121118;
+  --surface:#1B1A23;
+  --surface-2:#23212D;
+  --line:#34313F;
+  --line-soft:#2A2833;
+  --ink:#EEECF4;
+  --ink-2:#B6B1C6;
+  --ink-3:#847F96;
+  --accent:#A99BF5;
+  --accent-soft:#282343;
+  --gentle:#71C8B4;
+  --gentle-soft:#15322D;
+  --mid:#DFAE63;
+  --mid-soft:#372B18;
+  --strong:#E58F98;
+  --strong-soft:#3A2126;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic UI",system-ui,sans-serif;
+  font-size:16px;
+  line-height:1.9;
+  margin:0;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px 100px}
+.col{max-width:672px;margin-left:auto;margin-right:auto}
+.mono{font-family:"IBM Plex Mono","Zen Kaku Gothic New",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+
+/* ---------- structure ---------- */
+.eyebrow{
+  font-family:"IBM Plex Mono","Zen Kaku Gothic New",monospace;
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 16px;font-weight:500;
+}
+h1{
+  font-family:"Shippori Mincho B1","Yu Mincho",serif;
+  font-weight:700;
+  font-size:clamp(2.125rem,6.4vw,3.25rem);
+  line-height:1.28;
+  letter-spacing:.01em;
+  margin:0 0 22px;
+  text-wrap:balance;
+}
+.part{margin-top:96px}
+.part.first{margin-top:72px}
+.part-label{display:flex;align-items:center;gap:14px;margin-bottom:32px}
+.part-label .mono{
+  font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap;
+}
+.part-label .rule{height:1px;background:var(--line);flex:1}
+h2{
+  font-family:"Shippori Mincho B1",serif;font-weight:700;
+  font-size:clamp(1.75rem,4.6vw,2.3rem);line-height:1.4;
+  margin:0 0 14px;text-wrap:balance;letter-spacing:.01em;
+}
+h3{
+  font-family:"Shippori Mincho B1",serif;font-weight:600;
+  font-size:1.3125rem;line-height:1.55;margin:54px 0 12px;text-wrap:balance;
+}
+p{margin:0 0 18px}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}
+a:hover{border-bottom-color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+strong{font-weight:700}
+mark{background:var(--accent-soft);color:var(--ink);padding:.1em .25em;border-radius:2px}
+
+/* ---------- note ---------- */
+.note{
+  background:var(--surface-2);border-radius:3px;padding:20px 22px;margin:24px 0;
+  font-size:14.5px;line-height:1.85;color:var(--ink-2);
+}
+.note b{color:var(--ink)}
+.note .lbl{
+  display:block;font-family:"IBM Plex Mono",monospace;font-size:10.5px;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:8px;
+}
+.note.warn{background:var(--strong-soft)}
+.note.warn .lbl{color:var(--strong)}
+.note.good{background:var(--gentle-soft)}
+.note.good .lbl{color:var(--gentle)}
+
+/* ---------- matrix ---------- */
+.bleed{margin:34px calc(50% - 50vw);padding:0 22px;max-width:100vw}
+.bleed-in{max-width:1016px;margin:0 auto}
+.mx-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:6px}
+.mx{min-width:880px;display:grid;grid-template-columns:150px repeat(5,1fr);gap:6px}
+.mx-corner{
+  font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--ink-3);display:flex;align-items:flex-end;padding:0 0 12px 2px;
+}
+.mx-h{
+  padding:0 0 12px;text-align:center;font-size:12.5px;font-weight:700;color:var(--ink-2);
+  display:flex;flex-direction:column;justify-content:flex-end;gap:8px;
+}
+.mx-h .bar{height:3px;border-radius:2px}
+.mx-row-lbl{
+  display:flex;flex-direction:column;justify-content:center;gap:3px;
+  padding:14px 12px 14px 0;border-top:1px solid var(--line);
+}
+.mx-row-lbl .k{font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--accent);letter-spacing:.1em}
+.mx-row-lbl .t{font-size:13px;font-weight:700;line-height:1.45}
+.mx-row-lbl .d{font-size:11px;color:var(--ink-3);line-height:1.5}
+.cell{
+  border-top:1px solid var(--line);padding:12px 6px;
+  display:flex;flex-direction:column;gap:6px;align-items:center;justify-content:center;
+}
+.ing{
+  font-size:12.5px;font-weight:500;line-height:1.4;text-align:center;
+  padding:7px 10px;border-radius:3px;width:100%;
+  background:var(--surface);border:1px solid var(--line);color:var(--ink-2);
+}
+.ing.g{background:var(--gentle-soft);border-color:color-mix(in srgb,var(--gentle) 35%,transparent);color:var(--gentle);font-weight:700}
+.ing.m{background:var(--mid-soft);border-color:color-mix(in srgb,var(--mid) 35%,transparent);color:var(--mid)}
+.ing.s{background:var(--strong-soft);border-color:color-mix(in srgb,var(--strong) 35%,transparent);color:var(--strong)}
+.ing .brand{display:block;font-size:10px;font-weight:400;opacity:.8;margin-top:2px}
+.ing .star{color:var(--gentle);font-size:10px}
+.cell .dash{color:var(--ink-3);opacity:.4;font-size:13px}
+.mx-legend{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:16px;font-size:12px;color:var(--ink-3)}
+.mx-legend span{display:inline-flex;align-items:center;gap:7px}
+.dot{width:9px;height:9px;border-radius:2px;display:inline-block}
+.scroll-hint{
+  display:none;font-family:"IBM Plex Mono","Zen Kaku Gothic New",monospace;
+  font-size:11px;letter-spacing:.06em;color:var(--ink-3);margin:0 0 10px;
+}
+@media (max-width:900px){.scroll-hint{display:block}}
+
+/* ---------- tables ---------- */
+.tbl-wrap{
+  overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 0 8px;
+  border:1px solid var(--line);border-radius:3px;background:var(--surface);
+  box-shadow:var(--shadow);
+}
+table{border-collapse:collapse;width:100%;min-width:660px;font-size:13.5px}
+thead th{
+  text-align:left;font-family:"IBM Plex Mono","Zen Kaku Gothic New",monospace;
+  font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-3);
+  font-weight:500;padding:13px 14px;background:var(--surface-2);
+  border-bottom:1px solid var(--line);white-space:nowrap;
+}
+td{
+  padding:15px 14px;border-bottom:1px solid var(--line-soft);
+  vertical-align:top;line-height:1.75;color:var(--ink-2);
+}
+tbody tr:last-child td{border-bottom:none}
+td.nm{font-weight:700;color:var(--ink);width:23%;min-width:175px;font-size:13.5px;line-height:1.6}
+td.nm .pick{color:var(--accent);margin-right:4px}
+td.ig{width:20%;min-width:128px}
+td.pt{width:auto;min-width:215px;font-size:13px}
+td.pt em{font-style:normal;color:var(--ink);font-weight:500}
+td.sn{text-align:center;white-space:nowrap;width:1%}
+td.pr{
+  font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;
+  text-align:right;white-space:nowrap;color:var(--ink-3);width:1%;
+}
+tr.grp td{
+  background:var(--surface-2);padding:10px 14px;
+  font-family:"IBM Plex Mono","Zen Kaku Gothic New",monospace;
+  font-size:11px;letter-spacing:.12em;color:var(--ink-2);font-weight:500;
+  border-bottom:1px solid var(--line);
+}
+tr.grp td .rng{color:var(--ink-3);margin-left:10px}
+tr.off td{background:color-mix(in srgb,var(--strong-soft) 55%,transparent)}
+.tag{
+  display:inline-block;font-size:11px;font-weight:700;padding:3px 8px;border-radius:2px;
+  font-family:"Zen Kaku Gothic New",sans-serif;
+}
+.tag.g{background:var(--gentle-soft);color:var(--gentle)}
+.tag.m{background:var(--mid-soft);color:var(--mid)}
+.tag.s{background:var(--strong-soft);color:var(--strong)}
+.chip{
+  display:inline-block;font-size:11px;padding:2px 8px;border-radius:2px;margin:0 4px 4px 0;
+  background:var(--accent-soft);color:var(--accent);font-weight:500;
+  font-family:"IBM Plex Mono","Zen Kaku Gothic New",monospace;letter-spacing:.02em;
+}
+.tbl-cap{font-size:12.5px;color:var(--ink-3);margin:0 0 28px}
+
+/* ---------- levels / routine ---------- */
+.levels{display:grid;gap:14px;margin:28px 0}
+.lv{border:1px solid var(--line);border-radius:3px;background:var(--surface);padding:22px 24px}
+.lv.now{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.lv-top{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+.lv-n{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
+.lv-t{font-family:"Shippori Mincho B1",serif;font-size:1.0625rem;font-weight:600}
+.lv-when{font-size:12px;color:var(--ink-3);margin-left:auto;font-family:"IBM Plex Mono","Zen Kaku Gothic New",monospace}
+.lv ul{margin:0;padding-left:1.15em;font-size:14px;color:var(--ink-2);line-height:1.85}
+.lv .why{margin:14px 0 0;font-size:13px;color:var(--ink-3);border-top:1px solid var(--line-soft);padding-top:12px}
+.lv .why b{color:var(--ink-2)}
+
+.routine{display:grid;gap:12px;margin:0 0 14px}
+.rt{background:var(--ground);border:1px solid var(--line-soft);border-radius:3px;padding:18px 20px}
+.rt .when{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--accent);margin-bottom:10px;
+}
+.steps{display:flex;flex-wrap:wrap;gap:4px 0;align-items:center;margin:0;padding:0;list-style:none}
+.steps li{font-size:13.5px;line-height:1.7}
+.steps li::after{content:"→";color:var(--ink-3);margin:0 7px;opacity:.55}
+.steps li:last-child::after{content:""}
+.steps b{font-weight:700;color:var(--ink)}
+.rescue{border:1px solid var(--accent);border-radius:3px;background:var(--surface);padding:22px 24px;margin:24px 0}
+.rescue .rt{margin:0}
+.rescue-note{margin:14px 0 0;font-size:13.5px;color:var(--ink-2);line-height:1.8}
+.rescue-note em{font-style:normal;font-weight:700;color:var(--ink)}
+
+@media (max-width:640px){
+  .wrap{padding:0 18px 72px}
+  .part{margin-top:72px}
+  .part.first{margin-top:48px}
+  .bleed{padding:0 18px}
+  .lv,.rescue{padding:20px 18px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <!-- ============ 成分マップ ============ -->
+  <section class="part first">
+    <div class="col">
+      <p class="eyebrow">30歳・乾燥肌／ときどき敏感肌のために</p>
+      <h1>美白有効成分マップ</h1>
+      <p>縦軸が<strong>作用のしかた</strong>、横軸が<strong>強さ＝刺激リスク</strong>。同じ横位置にあるものは、効き目も刺激も同じくらい、という読み方をします。</p>
+      <p>そして<mark>メラニンの生成経路は何段階もある</mark>ので、1本にすべてを求めるより、<strong>作用点の違う成分を重ねる</strong>ほうが効率がいい。化粧水・美容液・乳液・日焼け止めで、別々の成分を持たせる設計が合理的です。</p>
+    </div>
+
+    <div class="bleed">
+      <div class="bleed-in">
+        <p class="scroll-hint">← 横にスクロールできます →</p>
+        <div class="mx-scroll">
+          <div class="mx">
+            <div class="mx-corner">作用のしかた</div>
+            <div class="mx-h"><span>やさしい</span><span class="bar" style="background:var(--gentle)"></span></div>
+            <div class="mx-h"><span>穏やか</span><span class="bar" style="background:color-mix(in srgb,var(--gentle) 60%,var(--mid))"></span></div>
+            <div class="mx-h"><span>中</span><span class="bar" style="background:var(--mid)"></span></div>
+            <div class="mx-h"><span>強め</span><span class="bar" style="background:color-mix(in srgb,var(--mid) 50%,var(--strong))"></span></div>
+            <div class="mx-h"><span>最強クラス</span><span class="bar" style="background:var(--strong)"></span></div>
+
+            <div class="mx-row-lbl">
+              <span class="k mono">A</span>
+              <span class="t">酵素をブロック</span>
+              <span class="d">チロシナーゼ活性阻害</span>
+            </div>
+            <div class="cell"><span class="dash">—</span></div>
+            <div class="cell"><span class="ing g"><span class="star">★</span>アルブチン<span class="brand">プチプラ全般</span></span></div>
+            <div class="cell"><span class="ing m">コウジ酸<span class="brand">三省製薬ほか</span></span><span class="ing m">エラグ酸<span class="brand">ライオン</span></span><span class="ing m">マグノリグナン<span class="brand">カネボウ</span></span></div>
+            <div class="cell"><span class="dash">—</span></div>
+            <div class="cell"><span class="ing s">ルシノール<span class="brand">POLA</span></span></div>
+
+            <div class="mx-row-lbl">
+              <span class="k mono">B</span>
+              <span class="t">指令を止める</span>
+              <span class="d">メラノサイトへの情報伝達ブロック</span>
+            </div>
+            <div class="cell"><span class="ing g"><span class="star">★</span>トラネキサム酸<span class="brand">資生堂・第一三共ほか</span></span><span class="ing g"><span class="star">★</span>カモミラET<span class="brand">花王</span></span></div>
+            <div class="cell"><span class="ing g">トラネキサム酸<br>セチル塩酸塩<span class="brand">浸透性UP版</span></span></div>
+            <div class="cell"><span class="dash">—</span></div>
+            <div class="cell"><span class="dash">—</span></div>
+            <div class="cell"><span class="dash">—</span></div>
+
+            <div class="mx-row-lbl">
+              <span class="k mono">C</span>
+              <span class="t">メラニンを追い出す</span>
+              <span class="d">ターンオーバー・代謝促進</span>
+            </div>
+            <div class="cell"><span class="dash">—</span></div>
+            <div class="cell"><span class="ing g"><span class="star">★</span>ナイアシンアミド<span class="brand">美白＋シワ改善のW効能</span></span></div>
+            <div class="cell"><span class="ing m">AMP-OT<span class="brand">大塚製薬</span></span></div>
+            <div class="cell"><span class="ing m">リノール酸S</span><span class="ing m">デクスパンテノールW<span class="brand">POLA</span></span></div>
+            <div class="cell"><span class="ing s">4MSK<span class="brand">資生堂／1成分で2作用</span></span></div>
+
+            <div class="mx-row-lbl">
+              <span class="k mono">D</span>
+              <span class="t">還元・抗酸化</span>
+              <span class="d">ビタミンC系</span>
+            </div>
+            <div class="cell"><span class="ing g"><span class="star">★</span>敏感肌向け<br>VC誘導体<span class="brand">ケシミン・無印</span></span></div>
+            <div class="cell"><span class="dash">—</span></div>
+            <div class="cell"><span class="ing m">エステル型<br>VC誘導体<span class="brand">アスタリフト・トゥヴェール</span></span></div>
+            <div class="cell"><span class="ing m">VCエチル<span class="brand">メラノCC化粧水</span></span></div>
+            <div class="cell"><span class="ing s">活性型ビタミンC<span class="brand">オバジ・メラノCC美容液</span></span></div>
+          </div>
+        </div>
+        <div class="mx-legend">
+          <span><i class="dot" style="background:var(--gentle)"></i>敏感肌でも使いやすい</span>
+          <span><i class="dot" style="background:var(--mid)"></i>普通肌向け</span>
+          <span><i class="dot" style="background:var(--strong)"></i>強い肌向け／要注意</span>
+          <span><b style="color:var(--gentle)">★</b> いまのあなたの適正ゾーン</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="note good">
+        <span class="lbl">トラネキサム酸が、敏感肌に最強に相性がいい理由</span>
+        もともと<b>抗炎症薬</b>です。つまり「炎症を止める＝メラノサイトへの刺激を減らす」と「メラニンを作れという指令をブロックする」を<b>同時にやる</b>。だから、紫外線後の色ムラ・ニキビ跡・こすった跡などの<b>炎症性色素沈着</b>に、理論的に一番向いています。
+      </div>
+      <div class="note warn">
+        <span class="lbl">強ければいい、ではない</span>
+        <b>A（チロシナーゼ活性阻害）の強力なもの</b>には、過去に<b>白斑</b>のリスクが問題になった経緯があります。「効きそうだから一番強いものを」という選び方は、しないでください。
+      </div>
+      <div class="note">
+        <span class="lbl">4MSKが優等生な理由</span>
+        チロシナーゼ活性阻害と、<b>メラニンの過剰蓄積そのものを抑える作用</b>を1成分で両立しています（＝上の表でA行とC行にまたがる成分）。しかも強力系のなかでは比較的マイルド。「攻めたいけれど白斑リスクは避けたい」の落としどころとして、かなり優秀です。
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ルート ============ -->
+  <section class="part">
+    <div class="col">
+      <div class="part-label"><span class="mono">01</span><span class="rule"></span><span class="mono">自分の位置を決める</span></div>
+      <h2>肌強度別のルート</h2>
+      <p>同じ「美白がしたい」でも、肌の強さでスタート地点が変わります。</p>
+
+      <div class="levels">
+        <div class="lv">
+          <div class="lv-top"><span class="lv-n mono">Route A</span><span class="lv-t">強い肌の人</span></div>
+          <ul><li>活性型ビタミンC ／ ルシノール ／ コウジ酸</li></ul>
+          <p class="why">最短ルート。ただしリスクも最大。</p>
+        </div>
+        <div class="lv">
+          <div class="lv-top"><span class="lv-n mono">Route B</span><span class="lv-t">普通の肌の人</span></div>
+          <ul><li>4MSK ／ VCエチル ／ エステル型ビタミンC誘導体</li></ul>
+          <p class="why">効果と安全性のバランスが取れたゾーン。</p>
+        </div>
+        <div class="lv now">
+          <div class="lv-top"><span class="lv-n mono">Route C</span><span class="lv-t">乾燥肌・ときどき敏感肌の人</span><span class="lv-when">← いまのあなた</span></div>
+          <ul><li>トラネキサム酸 ／ カモミラET ／ ナイアシンアミド ／ アルブチン</li></ul>
+          <p class="why"><b>トラネキサム酸を軸に、ナイアシンアミドかカモミラETを重ねる</b>のが理論的な最適解。全部が穏やか系なのに、作用点は3つ押さえられます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ アイテム ============ -->
+  <section class="part">
+    <div class="col">
+      <div class="part-label"><span class="mono">02</span><span class="rule"></span><span class="mono">アイテムを選ぶ</span></div>
+      <h2>価格帯別・おすすめ一覧</h2>
+      <p>価格は目安です。化粧品は<strong>リニューアルが頻繁</strong>なので、買うときは必ず現物の全成分表示を確認してください。<span style="color:var(--accent);font-weight:700">◆</span> は本命枠。</p>
+    </div>
+
+    <div class="bleed">
+      <div class="bleed-in">
+        <div class="col" style="max-width:672px"><h3 style="margin-top:34px">日焼け止め</h3></div>
+        <p class="scroll-hint">← 横にスクロールできます →</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr><th>商品</th><th>紫外線防止成分</th><th>ポイント</th><th>敏感肌</th><th>目安</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="nm"><span class="pick">◆</span>ミノン アミノモイスト<br>ブライトアップベースUV</td>
+                <td class="ig"><span class="chip">酸化チタンのみ</span><span class="chip">SPF47</span></td>
+                <td class="pt"><em>酸化チタンのみでSPF47は非常に珍しい。</em>白浮き対策で肌色に着色されていて、UV下地としても使えます。落とすときはクレンジングが必要。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥1,400</td>
+              </tr>
+              <tr>
+                <td class="nm"><span class="pick">◆</span>POLA ホワイティシモ<br>UVブロック ミルキーフルイド</td>
+                <td class="ig"><span class="chip">酸化チタンのみ</span><span class="chip">SPF30</span></td>
+                <td class="pt">低刺激・無香料・白浮きほぼなし。そして何より<em>落としやすい＝クレンジングの負担が最小</em>になります。日常使いの本命。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥4,000</td>
+              </tr>
+              <tr>
+                <td class="nm">キュレル 潤浸保湿<br>スキンリペアUVセラム</td>
+                <td class="ig"><span class="chip">セラミドケア</span></td>
+                <td class="pt">保湿しながらUVを防ぎたい人に。2026年の新作UVのなかでも評価が高い一本。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥2,000</td>
+              </tr>
+              <tr>
+                <td class="nm">ベルディオ<br>薬用UVジェルミルク／UVミルク</td>
+                <td class="ig"><span class="chip">美白有効成分入り</span></td>
+                <td class="pt">UVと美白を1本で兼ねられます。今季の美白日焼け止めでは完成度が突出。</td>
+                <td class="sn"><span class="tag m">○</span></td>
+                <td class="pr">¥1,500</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col" style="max-width:672px"><p class="tbl-cap">紫外線防止成分が<b>酸化チタンのみ</b>のものは、肌の上で化学変化を起こさないぶん最も低刺激。そのかわり白浮き・きしみが出やすくSPFも上げにくいので、そこを整えられている製品だけを選んでいます。</p></div>
+
+        <div class="col" style="max-width:672px"><h3>土台づくり ── 洗う・保湿する</h3></div>
+        <p class="scroll-hint">← 横にスクロールできます →</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr><th>商品</th><th>主な成分</th><th>ポイント</th><th>敏感肌</th><th>目安</th></tr>
+            </thead>
+            <tbody>
+              <tr class="grp"><td colspan="5">プチプラ帯<span class="rng mono">〜¥2,000</span></td></tr>
+              <tr>
+                <td class="nm">朝は、洗顔料を使わない</td>
+                <td class="ig">—</td>
+                <td class="pt">ぬるま湯だけ。乾燥肌・敏感肌は朝の洗顔料が不要な可能性が高いです。<em>ここが一番効いて、一番タダ。</em></td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥0</td>
+              </tr>
+              <tr>
+                <td class="nm">キュレル 潤浸保湿 泡洗顔料</td>
+                <td class="ig"><span class="chip">疑似セラミド</span><span class="chip">弱酸性</span></td>
+                <td class="pt">セラミドケア洗顔の定番。泡で出てくるので摩擦をゼロにできます。夜用。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥1,300</td>
+              </tr>
+              <tr>
+                <td class="nm">イハダ 薬用うるおい<br>ローション／エマルジョン</td>
+                <td class="ig"><span class="chip">アラントイン</span><span class="chip">グリチルリチン酸2K</span><span class="chip">高精製ワセリン</span></td>
+                <td class="pt">2026年2月のリニューアルで乳液に疑似セラミドが追加。美白より先に、まず荒れを止めたい時期のライン。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥1,400〜</td>
+              </tr>
+              <tr>
+                <td class="nm">イハダ 薬用バーム</td>
+                <td class="ig"><span class="chip">高精製ワセリン</span></td>
+                <td class="pt"><em>ピリつく日のレスキュー枠。</em>ひとつ持っておくと、荒れた時に慌てずに済みます。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥1,400</td>
+              </tr>
+
+              <tr class="grp"><td colspan="5">ミドルプライス帯<span class="rng mono">¥2,000〜5,000</span></td></tr>
+              <tr>
+                <td class="nm"><span class="pick">◆</span>キュレル 潤浸保湿<br>角層深部バリア美容液</td>
+                <td class="ig"><span class="chip">GABOB</span><span class="chip">疑似セラミド</span></td>
+                <td class="pt"><em>「肌の知覚過敏を改善する」GABOBを搭載した美容液。</em>ピリつくという症状に、いちばん直球で設計が合っています。予算を1つに絞るならこれ。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥3,000</td>
+              </tr>
+              <tr>
+                <td class="nm"><span class="pick">◆</span>ワンバイコーセー<br>セラムシールド</td>
+                <td class="ig"><span class="chip">ライスパワーNo.11+</span></td>
+                <td class="pt"><em>「シワ改善」＋「肌の水分保持能改善」のW効能を史上初で取得した成分。</em>キメ＝角層の水分保持能なので、<em>つるんつるん担当はこれ</em>。</td>
+                <td class="sn"><span class="tag m">○</span></td>
+                <td class="pr">¥5,000</td>
+              </tr>
+              <tr>
+                <td class="nm">pdc ダーマエイド<br>トリプルアクティブ ローション</td>
+                <td class="ig"><span class="chip">有効成分3種</span></td>
+                <td class="pt">3種の有効成分を1本に収めた化粧水。処方の難度が高く、達成している製品はほとんどありません。</td>
+                <td class="sn"><span class="tag m">○</span></td>
+                <td class="pr">¥2,000</td>
+              </tr>
+
+              <tr class="grp"><td colspan="5">こだわり帯<span class="rng mono">¥5,000〜</span></td></tr>
+              <tr>
+                <td class="nm">トゥヴェール<br>バリアショットセラム 2.0</td>
+                <td class="ig"><span class="chip">ヒト型セラミド 2%</span></td>
+                <td class="pt">セラミド濃度が突出した美容液。攻めたケアを始める前の、土台固めに。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥6,000</td>
+              </tr>
+              <tr>
+                <td class="nm">セララボ セラキュア<br>ローション ＆ エッセンス</td>
+                <td class="ig"><span class="chip">複合セラミド</span></td>
+                <td class="pt">敏感肌向けに設計されたセラミドライン。いまは少量の「プチボトル」で試せます。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥3,000〜</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col" style="max-width:672px"><p class="tbl-cap">バリア機能が落ちた肌は、水分を保持できずキメが乱れ、炎症が起きやすくなります。そして<b>炎症はメラノサイトを刺激する</b>ので、ここを立て直さないかぎり美白も成立しません。</p></div>
+
+        <div class="col" style="max-width:672px"><h3>美白特化</h3></div>
+        <p class="scroll-hint">← 横にスクロールできます →</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr><th>商品</th><th>美白有効成分</th><th>ポイント</th><th>敏感肌</th><th>目安</th></tr>
+            </thead>
+            <tbody>
+              <tr class="grp"><td colspan="5">プチプラ帯<span class="rng mono">〜¥2,000</span></td></tr>
+              <tr>
+                <td class="nm"><span class="pick">◆</span>肌美精 薬用美白美容液</td>
+                <td class="ig"><span class="chip">トラネキサム酸</span><span class="chip">ビタミンC誘導体</span></td>
+                <td class="pt">リニューアルで<em>アルコールフリーになり、刺激感が解消された</em>のが大きい。無香料。ユズセラミドと浸透促進成分も入って<em>1,000円以下</em>。今季のプチプラ美白では頭ひとつ抜けた完成度。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥1,000</td>
+              </tr>
+              <tr>
+                <td class="nm"><span class="pick">◆</span>肌美精 薬用美白化粧水</td>
+                <td class="ig"><span class="chip">トラネキサム酸</span><span class="chip">ビタミンC誘導体</span></td>
+                <td class="pt"><em>美容液とほぼ同じ成分なのに、容量は5倍以上。</em>サラサラで浸透力が高く、コスパが壊れています。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥1,300</td>
+              </tr>
+              <tr>
+                <td class="nm"><span class="pick">◆</span>イハダ 薬用クリアローション<br>／クリアエマルジョン</td>
+                <td class="ig"><span class="chip">トラネキサム酸</span><span class="chip">グリチルリチン酸2K</span></td>
+                <td class="pt">長年人気のデパコス化粧水と<em>同じ有効成分の組み合わせ</em>。プチプラで最もデパコスに近いと評される化粧水で、乳液のほうは実質唯一の“隠れデパコス級”。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥1,400〜</td>
+              </tr>
+              <tr>
+                <td class="nm">キュレル シミ・ソバカス予防ケア<br>乳液／フェイスクリーム</td>
+                <td class="ig"><span class="chip">カモミラET</span><span class="chip">疑似セラミド</span></td>
+                <td class="pt"><em>美白しながらセラミドケアができる、かなり稀有な設計。</em>乾燥が強いならフェイスクリームのほう。</td>
+                <td class="sn"><span class="tag g">◎</span></td>
+                <td class="pr">¥2,000〜</td>
+              </tr>
+              <tr>
+                <td class="nm">明色 モイスチュアマイルドホワイト</td>
+                <td class="ig"><span class="chip">ナイアシンアミド</span></td>
+                <td class="pt">プチプラのナイアシンアミドではコスパが突出。</td>
+                <td class="sn"><span class="tag m">○</span></td>
+                <td class="pr">¥900</td>
+              </tr>
+              <tr>
+                <td class="nm">無印良品 薬用美白オールインワンジェル<br>／ ケシミン</td>
+                <td class="ig"><span class="chip">敏感肌向けVC誘導体</span></td>
+                <td class="pt">ビタミンCも取り入れたいけれど刺激は怖い、という時の現実的な着地点。</td>
+                <td class="sn"><span class="tag m">○</span></td>
+                <td class="pr">¥1,500</td>
+              </tr>
+              <tr class="off">
+                <td class="nm">メラノCC しみ集中対策 美容液</td>
+                <td class="ig"><span class="chip">活性型ビタミンC</span></td>
+                <td class="pt">プチプラ美白の定番ですが、<em>いまのあなたにはまだ早い</em>。高濃度ビタミンC＋エタノールで、ピリついている肌にはほぼ確実に沁みます。</td>
+                <td class="sn"><span class="tag s">今は非推奨</span></td>
+                <td class="pr">¥1,300</td>
+              </tr>
+
+              <tr class="grp"><td colspan="5">ミドルプライス帯<span class="rng mono">¥2,000〜5,000</span></td></tr>
+              <tr>
+                <td class="nm"><span class="pick">◆</span>エリクシール<br>ブライトニング エマルジョン</td>
+                <td class="ig"><span class="chip">4MSK</span><span class="chip">トラネキサム酸</span></td>
+                <td class="pt">強めの4MSKと、穏やかで抗炎症も兼ねるトラネキサム酸のW有効成分。デパコス超えと評される美白乳液。<em>肌が落ち着いたあとの「格上げ先」はここ。</em></td>
+                <td class="sn"><span class="tag m">○</span></td>
+                <td class="pr">¥4,000</td>
+              </tr>
+              <tr>
+                <td class="nm">アスタリフトホワイト<br>エッセンスインフィルト</td>
+                <td class="ig"><span class="chip">エステル型VC誘導体</span><span class="chip">アスタキサンチン</span></td>
+                <td class="pt">美白と抗酸化を同時に取りにいける一本。アスタキサンチンは<em>ビタミンCの約6000倍</em>とされる抗酸化力を持つ成分です。</td>
+                <td class="sn"><span class="tag s">△</span></td>
+                <td class="pr">¥4,000</td>
+              </tr>
+              <tr>
+                <td class="nm">インナーシグナル<br>リジュブネイトエキス</td>
+                <td class="ig"><span class="chip">AMP-OT</span></td>
+                <td class="pt">肌のエネルギー源から代謝を促す発想。ターンオーバーが落ちてくる30代には理屈が合います。</td>
+                <td class="sn"><span class="tag m">○</span></td>
+                <td class="pr">¥5,000</td>
+              </tr>
+
+              <tr class="grp"><td colspan="5">デパコス／ハイエンド<span class="rng mono">¥5,000〜</span></td></tr>
+              <tr>
+                <td class="nm">HAKU メラノフォーカス<br>（現行世代）</td>
+                <td class="ig"><span class="chip">4MSK</span><span class="chip">m-トラネキサム酸</span></td>
+                <td class="pt">国内美白の最高峰格。<em>強力系のなかでは比較的マイルド</em>なので、敏感寄りの人が「いつか本気で攻めたい」ときの第一候補。リニューアルが多いので最新世代を確認して。</td>
+                <td class="sn"><span class="tag m">○</span></td>
+                <td class="pr">¥11,000</td>
+              </tr>
+              <tr>
+                <td class="nm">POLA ホワイトショット</td>
+                <td class="ig"><span class="chip">ルシノール</span><span class="chip">デクスパンテノールW</span></td>
+                <td class="pt">阻害系の最強格に代謝促進を重ねた構成。<em>効果は最上位、リスクも最上位。</em></td>
+                <td class="sn"><span class="tag s">△</span></td>
+                <td class="pr">¥15,000〜</td>
+              </tr>
+              <tr>
+                <td class="nm">オバジ Cセラム<br>（リニューアル版）</td>
+                <td class="ig"><span class="chip">高濃度・活性型ビタミンC</span></td>
+                <td class="pt">細胞内のビタミンC量を150%アップさせる新技術を搭載し、リニューアルで低刺激化。それでも強いので、当面は見送りで。</td>
+                <td class="sn"><span class="tag s">△</span></td>
+                <td class="pr">¥7,000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 実践 ============ -->
+  <section class="part">
+    <div class="col">
+      <div class="part-label"><span class="mono">03</span><span class="rule"></span><span class="mono">組み立てる</span></div>
+      <h2>3段階の進め方</h2>
+      <p>「作用点の違う成分を重ねる」を、実際の並びに落とし込むとこうなります。</p>
+
+      <div class="levels">
+        <div class="lv now">
+          <div class="lv-top"><span class="lv-n mono">Level 1</span><span class="lv-t">まずここから</span><span class="lv-when">〜ピリつきが取れるまで</span></div>
+          <div class="routine">
+            <div class="rt">
+              <div class="when">朝</div>
+              <ul class="steps">
+                <li>ぬるま湯洗顔</li>
+                <li><b>肌美精 薬用美白化粧水</b></li>
+                <li><b>キュレル 角層深部バリア美容液</b></li>
+                <li><b>キュレル シミ・ソバカス予防ケア 乳液</b></li>
+                <li><b>ミノン ブライトアップベースUV</b></li>
+              </ul>
+            </div>
+            <div class="rt">
+              <div class="when">夜</div>
+              <ul class="steps">
+                <li>クレンジング</li>
+                <li>キュレル 泡洗顔料</li>
+                <li><b>肌美精 薬用美白化粧水</b></li>
+                <li><b>肌美精 薬用美白美容液</b></li>
+                <li><b>キュレル シミ・ソバカス予防ケア フェイスクリーム</b></li>
+              </ul>
+            </div>
+          </div>
+          <p class="why">重ねている作用点は<b>4つ</b>。トラネキサム酸（指令ブロック）＋ ビタミンC誘導体（還元）＋ カモミラET（指令ブロック）＋ 疑似セラミド／GABOB（バリア・知覚過敏）。<b>全部が穏やか系なのに、守備範囲は広い。</b>合計7,000円弱です。</p>
+        </div>
+
+        <div class="lv">
+          <div class="lv-top"><span class="lv-n mono">Level 2</span><span class="lv-t">肌が安定したら</span><span class="lv-when">2〜3か月後</span></div>
+          <ul><li>乳液を <b>エリクシール ブライトニング エマルジョン</b>（4MSK × トラネキサム酸）に格上げ</li></ul>
+          <p class="why">ここで初めて<b>ターンオーバー促進系（4MSK）</b>が加わり、予防だけでなく既存のくすみにも手が届き始めます。</p>
+        </div>
+
+        <div class="lv">
+          <div class="lv-top"><span class="lv-n mono">Level 3</span><span class="lv-t">さらに攻めたいなら</span><span class="lv-when">安定が続いたら</span></div>
+          <ul>
+            <li><b>HAKU メラノフォーカス</b>を投入</li>
+            <li>または <b>メラノCC 美白化粧水</b>（VCエチル）を週2〜3回から追加</li>
+          </ul>
+          <p class="why">ただし大原則に戻ります。<b>続かないなら意味がない。</b>刺激が出たら迷わずLevel 1に戻ってください。後退ではなく、正しい運用です。</p>
+        </div>
+      </div>
+
+      <h3>ピリついた日の、レスキューモード</h3>
+      <div class="rescue">
+        <div class="rt">
+          <div class="when">Rescue</div>
+          <ul class="steps">
+            <li>ぬるま湯</li>
+            <li><b>低刺激の化粧水</b></li>
+            <li><b>イハダ薬用バーム or ワセリン</b></li>
+          </ul>
+        </div>
+        <p class="rescue-note"><em>美白は、いったん止める。</em>たいてい2〜3日で戻ります。ここで無理に頑張ると長引くので、止める勇気のほうが結果的に近道です。</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

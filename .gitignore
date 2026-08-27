@@ -11,6 +11,7 @@
 !/robots.txt
 !/apple-touch-icon.png
 !/sugimoto/
+!/skincare/
 
 # macOS / エディタの生成物（全階層）
 .DS_Store
